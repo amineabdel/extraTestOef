@@ -1,0 +1,39 @@
+<h1>hier kan je de resultaten zien</h1>
+
+
+<div>
+    <% for(var i=0;i<brand.length;i++){%>
+        <ul>
+                <li>name: <span><%= brand[i].name%></span></li>
+                <li>type: <span><%= brand[i].type%></span></li>
+                <li>price: <span><%= brand[i].price%></span></li>
+        </ul>
+    <%}%>
+
+</div>
+
+
+<br/>
+<br/>
+<br/>
+
+
+<form method="POST" action="/back">
+    <button type="submit">ga terug om toe te voegen</button>
+</form>
+<br/>
+
+
+
+<form method="POST" action="/verwijderAlles">
+    <button type="submit">verwijder alle result</button>
+</form>
+<br/>
+
+<form method="POST" action="/verwijder1">
+    <button type="submit">verwijder iets specifiek</button>
+</form>
+<br/>
+<form method="POST" action="/zoek">
+    <button type="submit">zoek brand</button>
+</form>
